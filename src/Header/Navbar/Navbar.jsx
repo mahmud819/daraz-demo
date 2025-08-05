@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import darazImg from "../../assets/daraz.png";
-import { FaAngleDown, FaAngleUp, FaSearch } from "react-icons/fa";
+import { FaAnchor, FaAngleDown, FaAngleLeft, FaAngleRight, FaAngleUp, FaSearch } from "react-icons/fa";
 import { FaArrowDown, FaCartShopping, FaDownLong } from "react-icons/fa6";
 
 const Navbar = () => {
@@ -79,8 +79,8 @@ const Navbar = () => {
             <FaAngleDown className="text-[20px] ml-4 mt-3"></FaAngleDown>
           </div>
         </div>
-        <div className="list-none ">
-          <li className="hover:text-[#f57224]">Women's & Girls Fashion</li>
+        <div className={angleStatus?'block list-none px-4':'hidden list-none px-4 hover:block'} >
+          <li className="flex items-center hover:text-[#f57224]">Women's & Girls Fashion <FaAngleRight onMouseEnter={()=>setAngleStatus(true)} onMouseLeave={()=>setAngleStatus(false)} className={!angleStatus?'block':'hidden'}></FaAngleRight> </li>
           <li className="hover:text-[#f57224]">Men's & Boy's Fashion</li>
           <li className="hover:text-[#f57224]">Electronics Accessories</li>
           <li className="hover:text-[#f57224]">TV & Home Appliance</li>
