@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import darazImg from "../../assets/daraz.png";
-import { FaAnchor, FaAngleDown, FaAngleLeft, FaAngleRight, FaAngleUp, FaSearch } from "react-icons/fa";
+import {
+  FaAnchor,
+  FaAngleDown,
+  FaAngleLeft,
+  FaAngleRight,
+  FaAngleUp,
+  FaSearch,
+} from "react-icons/fa";
 import { FaArrowDown, FaCartShopping, FaDownLong } from "react-icons/fa6";
+import "../../App.css";
 
 const Navbar = () => {
   const [angleStatus, setAngleStatus] = useState(false);
@@ -65,7 +73,7 @@ const Navbar = () => {
         </div>
       </div>
       <div>
-        <div
+        {/* <div
           // onClick={() => handleAngleStatus()}
           onMouseEnter={() => setAngleStatus(true)}
           onMouseLeave={() => setAngleStatus(false)}
@@ -92,6 +100,18 @@ const Navbar = () => {
           <li className="hover:text-[#f57224]">Groceries</li>
           <li className="hover:text-[#f57224]">Health & Beauty</li>
           <li className="hover:text-[#f57224]">Watches,Bags,Gewellery</li>
+        </div> */}
+        <div
+          onMouseEnter={() => setAngleStatus(true)}
+          onMouseLeave={() => setAngleStatus(false)}
+          className="categories-div  flex"
+        >
+          <h1 className="categories pl-4">Categories</h1>
+          <FaAngleDown className={angleStatus?'hidden angle-down':'block angle-down my-auto ml-2'}></FaAngleDown>
+          <FaAngleUp className={angleStatus?'block angle-down my-auto ml-2':'hidden angle-down my-auto ml-2'}></FaAngleUp>
+        </div>
+        <div className="categories-list">
+
         </div>
       </div>
     </div>
