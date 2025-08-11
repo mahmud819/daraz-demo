@@ -72,46 +72,77 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div>
-        {/* <div
-          // onClick={() => handleAngleStatus()}
-          onMouseEnter={() => setAngleStatus(true)}
-          onMouseLeave={() => setAngleStatus(false)}
-          className="flex inline-block hover:text-[#f57224]"
-        >
-          <h1 className="py-2 pl-4 fond-bold">Categories</h1>
-          <div className={angleStatus ? "block" : "hidden"}>
-            <FaAngleUp className="text-[20px] ml-4 mt-3"></FaAngleUp>
-          </div>
-          <div className={angleStatus ? "hidden" : "block"}>
-            <FaAngleDown className="text-[20px] ml-4 mt-3"></FaAngleDown>
-          </div>
-        </div>
-        <div className={angleStatus?'block list-none px-4':'hidden list-none px-4 hover:block'} >
-          <li className="flex items-center hover:text-[#f57224]">Women's & Girls Fashion <FaAngleRight onMouseEnter={()=>setAngleStatus(true)} onMouseLeave={()=>setAngleStatus(false)} className={!angleStatus?'block':'hidden'}></FaAngleRight> </li>
-          <li className="hover:text-[#f57224]">Men's & Boy's Fashion</li>
-          <li className="hover:text-[#f57224]">Electronics Accessories</li>
-          <li className="hover:text-[#f57224]">TV & Home Appliance</li>
-          <li className="hover:text-[#f57224]">Electronics Devices</li>
-          <li className="hover:text-[#f57224]">Mother & Baby</li>
-          <li className="hover:text-[#f57224]">Automobile & Motorbike</li>
-          <li className="hover:text-[#f57224]">Spoots & Outdoors</li>
-          <li className="hover:text-[#f57224]">Home & Lifestyle</li>
-          <li className="hover:text-[#f57224]">Groceries</li>
-          <li className="hover:text-[#f57224]">Health & Beauty</li>
-          <li className="hover:text-[#f57224]">Watches,Bags,Gewellery</li>
-        </div> */}
+      <div className="categories-main inline-block w-54">
         <div
           onMouseEnter={() => setAngleStatus(true)}
           onMouseLeave={() => setAngleStatus(false)}
           className="categories-div  flex"
         >
           <h1 className="categories pl-4">Categories</h1>
-          <FaAngleDown className={angleStatus?'hidden angle-down':'block angle-down my-auto ml-2'}></FaAngleDown>
-          <FaAngleUp className={angleStatus?'block angle-down my-auto ml-2':'hidden angle-down my-auto ml-2'}></FaAngleUp>
+          <FaAngleDown
+            className={
+              angleStatus
+                ? "hidden angle-down"
+                : "block angle-down my-auto ml-2"
+            }
+          ></FaAngleDown>
+          <FaAngleUp
+            className={
+              angleStatus
+                ? "block angle-down my-auto ml-2"
+                : "hidden angle-down my-auto ml-2"
+            }
+          ></FaAngleUp>
         </div>
-        <div className="categories-list">
-
+        <div className="w-52 categories-list list-none ml-2 pl-2 py-2">
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Women's & Girls Fashion</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Men's & Boy's Fashion</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Electronics Accessories</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>TV & Home Appliance</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Electronics Devices</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Mother & Baby</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Automobile & Motorbike</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Spoots & Outdoors</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Home & Lifestyle</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Groceries</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Health & Beauty</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
+          <div className="li-div flex justify-between hover:text-[#f57224]">
+            <li>Watches,Bags,Gewellery</li>
+            <FaAngleRight className="angle-right my-auto mt-[6px]"></FaAngleRight>
+          </div>
         </div>
       </div>
     </div>

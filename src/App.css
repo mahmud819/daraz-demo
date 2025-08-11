@@ -1,8 +1,23 @@
 .categories:hover{
     color: #f85606;
+    display: block;
 }
 .categories-div:hover .angle-down{
     color: #f85606;
+    /* background-color: aquamarine; */
+}
+.categories-list{
+    display: none;
+}
+.categories-main:hover .categories-list{
+    display: block;
+    /* background-color: rgb(38, 38, 167); */
+}
+.angle-right{
+    display: none;
+}
+.li-div:hover .angle-right{
+    display: block;
 }
 /* .categories{
     background-color: yellow;
